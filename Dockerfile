@@ -11,4 +11,4 @@ COPY . ./
 COPY --from=dev /app/venv /app/venv
 ENV PATH="/app/venv/bin:$PATH"
 
-ENTRYPOINT ["flask", "run", "--host 0.0.0.0"]
+ENTRYPOINT ["flask", "run", "--host=0.0.0.0"]
